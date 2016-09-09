@@ -24,6 +24,11 @@ brew 'opencv'
 brew 'dfu-programmer'
 brew 'openssl'
 brew 'gibo'
+// For making oF files into Javascript for the web
+brew 'emscripten'
+brew 'yuicomp'
+brew 'yuicompressor'
+
 
 brew 'ruby'
 brew 'go', args: ['cross-compile-common']
