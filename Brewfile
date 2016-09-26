@@ -3,6 +3,9 @@
 # Make sure we’re using the latest Homebrew.
 brew update
 
+# Upgrade any already-installed formulae.
+brew upgrade --all
+
 tap 'homebrew/bundle'
 
 brew 'cinder'
@@ -15,6 +18,9 @@ brew 'docker'
 brew 'pandoc'
 brew 'osxfuse'
 brew 'infinit'
+
+# Install GNU core utilities (those that come with macOS are outdated).
+# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`
 brew 'coreutils'
 brew 'moreutils'
 brew 'findutils'
@@ -75,8 +81,6 @@ cask 'flux'
 cask 'iterm2'
 cask 'slack'
 cask 'virtualbox'
-
-
 
 # Remove outdated versions from the cellar.
 brew cleanup
