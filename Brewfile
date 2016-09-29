@@ -18,6 +18,11 @@ brew 'docker'
 brew 'pandoc'
 brew 'osxfuse'
 brew 'infinit'
+brew 'tmux'
+brew 'surge'
+
+
+
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`
@@ -49,7 +54,10 @@ brew 'nodebrew'
 brew 'python'
 brew 'python3'
 brew 'newlisp'
-
+brew 'hugo'
+brew 'vim', args: ['with-lua', 'with-luajit']
+brew 'sqlite'
+brew 'zsh', args: ['disable-etcdir']
 brew 'hugo'
 
 
@@ -77,7 +85,7 @@ cask 'scipy'
 cask 'skype'
 cask 'flux'
 
-
+cask 'vagrant'
 cask 'iterm2'
 cask 'slack'
 cask 'virtualbox'
