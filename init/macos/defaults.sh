@@ -3,12 +3,31 @@
 trap 'echo Error: $0:$LINENO stopped; exit 1' ERR INT
 set -eu
 
-# Dock {{1
-set_dashboard_preferences() 
+set_global_preferences()
 {
+# Require password immediately after the computer went into
+    # sleep or screen saver mode
+    defaults write com.apple.screensaver askForPassword -int 1
+    defaults write com.apple.screensaver askForPasswordDelay -int 0
+
 
 }
 
+set_screenshot_preferences()
+{
+# Save screenshots to the desktop.
+defaults write com.apple.screencapture location "$HOME/Desktop"
+
+# Save screenshots as jpg 
+defaults write com.apple.screencapture type -string "jpg"
+}
+
+# Dashboard {{{1
+set_dashboard_preferences()
+{
+    # Disable Dashboard
+    defaults write com.apple.dashboard mcx-disabled -bool true
+}
 set_dock_preferences() 
 {
 
@@ -49,6 +68,8 @@ defaults write com.apple.finder QuitMenuItem -bool true
     # Show all filename extensions
     defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+      # Show the ~/Library directory
+    chflags nohidden ~/Library
 
 
 
@@ -63,36 +84,53 @@ set_keyboard_preferences()
      # Set the key repeat rate to fast
     defaults write NSGlobalDomain KeyRepeat -int 2
 
-    
+
 }
 
 set_language_and_region_preferences() 
 {
+    # Enable full keyboard access for all controls
+    # (e.g. enable Tab in modal dialogs)
+    defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-}
-
-set_maps_preferences() 
-{
-
-}
-
-set_textedit_preferences()
-{ 
-
+    # Set the key repeat rate to fast
+    defaults write NSGlobalDomain KeyRepeat -int 2
 }
 
 set_trackpad_preferences()
 {
-
+ # Enable `Tap to click`
+    defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+    defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+    defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 }
 
-set_transmission_preferences()
-{
-
-}
 
 set_ui_and_ux_preferences()
 {
+# Set computer name
+    sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Laptop"
+    sudo scutil --set ComputerName "Artemis"
+    sudo scutil --set HostName "kkshmz"
+    sudo scutil --set LocalHostName "kkshmz"
+# Avoid creating `.DS_Store` files on network volumes
+    defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+    # Require password immediately after the computer went into
+    # sleep or screen saver mode
+    defaults write com.apple.screensaver askForPassword -int 1
+    defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+
+    # Disable the "Are you sure you want to open this application?" dialog
+    defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+    # Automatically quit the printer app once the print jobs are completed
+    defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+    # Enable subpixel font rendering on non-Apple LCDs
+    defaults write NSGlobalDomain AppleFontSmoothing -int 2
+
 
 }
 
@@ -124,6 +162,7 @@ set_textedit_preferences
 set_trackpad_preferences
 set_transmission_preferences
 set_ui_and_ux_preferences
+set_global_preferences
 
 killall cfprefsd
 killall Dock
