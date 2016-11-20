@@ -4,8 +4,10 @@ tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'homebrew/python'
 tap 'homebrew/science'
+cask 'java'
 brew 'autoconf'
 brew 'autoenv'
+brew 'bfg'
 brew 'libpng'
 brew 'freetype'
 brew 'pkg-config'
@@ -37,9 +39,11 @@ brew 'doxygen'
 brew 'pcre2'
 brew 'fish'
 brew 'gdbm'
+brew 'ghc'
 brew 'little-cms2'
 brew 'ghostscript'
 brew 'go'
+brew 'haskell-stack'
 brew 'hub'
 brew 'hugo'
 brew 'openssl'
@@ -51,7 +55,9 @@ brew 'python'
 brew 'libxml2'
 brew 'libyaml'
 brew 'mas'
+brew 'mecab'
 brew 'moreutils'
+brew 'nkf'
 brew 'node'
 brew 'pandoc'
 brew 'pyenv'
@@ -78,9 +84,9 @@ cask 'arduino'
 cask 'atom'
 cask 'dropbox'
 cask 'flux'
-cask 'gimp'
 cask 'google-chrome'
 cask 'google-drive'
+cask 'haskell-platform'
 cask 'iterm2'
 cask 'jupyter-notebook-ql'
 cask 'makerbot-desktop'
@@ -95,6 +101,7 @@ cask 'sourcetree'
 cask 'spectacle'
 cask 'spotify'
 cask 'sublime-text'
+cask 'supercollider'
 cask 'thunderbird'
 cask 'unity'
 cask 'vagrant'
@@ -102,12 +109,13 @@ cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'webstorm'
 mas 'Numbers', id: 409203825
+mas 'Keynote', id: 409183694
+mas 'Xcode', id: 497799835
+mas 'LINE', id: 539883307
+mas 'Pages', id: 409201541
+mas 'Xcode', id: 497799835
+mas 'LINE', id: 539883307
+mas 'Keynote', id: 409183694
+mas 'Pages', id: 409201541
+mas 'Bear', id: 1091189122
 mas 'Numbers', id: 409203825
-mas 'Xcode', id: 497799835
-mas 'Keynote', id: 409183694
-mas 'Pages', id: 409201541
-mas 'Xcode', id: 497799835
-mas 'LINE', id: 539883307
-mas 'Keynote', id: 409183694
-mas 'Pages', id: 409201541
-mas 'LINE', id: 539883307

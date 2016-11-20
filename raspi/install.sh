@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-
+#NOOBS FULL
+#Version: 2.0.0
+#Released: 2016-10-05
+#
 sudo apt-get update
 sudo apt-get upgrade
 
