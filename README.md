@@ -8,19 +8,30 @@ I acknowledgethat this repository of my dotfiles are referring to the following 
 
 * Installation section based on [@b4b407's dotfiles](https://github.com/b4b407/dotfiles)
 
+## License [![](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][license]
+### OS X
 
-```
-brew install mas
-mas install ###
-409203825 Numbers (4.0.5)
-409183694 Keynote (7.0.5)
-497799835 Xcode (8.1)
-539883307 LINE (4.10.0)
-409201541 Pages (6.0.5)
-497799835 Xcode (8.1)
-539883307 LINE (4.10.2)
-409183694 Keynote (7.0.5)
-409201541 Pages (6.0.5)
-1091189122 Bear (1.0.3)
-409203825 Numbers (4.0.5)
-```
+When setting up a new Mac, you may want to perform the following tasks mainly.
+
+- Install the Xcode Command Line Tools
+
+	You need to have Xcode or, at the very minimum, the Xcode Command Line Tools, which are available as a much smaller download.
+	
+	The easiest way to install the [Xcode Command Line Tools](https://developer.apple.com/downloads) in OS X 10.9+ is to open up a terminal, type `xcode-select --install` and follow the prompts.
+
+- Install Homebrew and setup their formulae
+
+	Since OS X does not have a native package manager that you can use from the command line, [Brew](http://brew.sh) (also known as Homebrew), has filled in. 
+	
+	After installing Homebrew, you may want to install some common Homebrew formulae:
+	
+	```console
+	$ make init
+	```
+	
+- Run some `defaults` commands
+
+	It can set many hidden settings and preferences in Mac OS X, and in individual applications.
+
+All of these are included in the `make init` for OS X. For more detail, see also [here][platform] of documentation of OS X operation.
+
