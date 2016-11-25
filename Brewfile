@@ -5,13 +5,11 @@ tap 'homebrew/core'
 tap 'homebrew/python'
 tap 'homebrew/science'
 cask 'java'
-
 brew 'autoconf'
 brew 'autoenv'
 brew 'bfg'
 brew 'libpng'
 brew 'freetype'
-brew 'pkg-config'
 brew 'fontconfig'
 brew 'gettext'
 brew 'libffi'
@@ -19,18 +17,6 @@ brew 'pcre'
 brew 'glib'
 brew 'pixman'
 brew 'cairo'
-brew 'git'
-brew 'gobject-introspection'
-brew 'jpeg'
-brew 'xz'
-brew 'libtiff'
-brew 'shared-mime-info'
-brew 'gdk-pixbuf'
-brew 'libcroco'
-brew 'icu4c'
-brew 'harfbuzz'
-brew 'pango'
-brew 'librsvg'
 brew 'emacs'
 brew 'cask'
 brew 'cctools'
@@ -39,17 +25,35 @@ brew 'coreutils'
 brew 'doxygen'
 brew 'pcre2'
 brew 'fish'
+brew 'flac'
 brew 'gdbm'
+brew 'git'
+brew 'pkg-config'
+brew 'gobject-introspection'
+brew 'jpeg'
+brew 'libtiff'
+brew 'shared-mime-info'
+brew 'gdk-pixbuf'
 brew 'ghc'
 brew 'little-cms2'
 brew 'ghostscript'
 brew 'go'
+brew 'icu4c'
+brew 'harfbuzz'
 brew 'haskell-stack'
 brew 'hub'
 brew 'hugo'
+brew 'libcroco'
 brew 'openssl'
 brew 'libevent'
+brew 'liblo'
+brew 'libogg'
 brew 'libquicktime'
+brew 'pango'
+brew 'librsvg'
+brew 'libsamplerate'
+brew 'libvorbis'
+brew 'libsndfile'
 brew 'readline'
 brew 'sqlite'
 brew 'python'
@@ -60,19 +64,21 @@ brew 'mecab'
 brew 'moreutils'
 brew 'nkf'
 brew 'node'
+brew 'p7zip'
 brew 'pandoc'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'pyenv-virtualenvwrapper'
+brew 'xz'
 brew 'python3'
 brew 'ruby'
 brew 'speedtest_cli'
 brew 'texi2html'
-brew 'utf8proc'
 brew 'tmux'
 brew 'tree'
-brew 'zsh', args: ['without-etcdir']
+brew 'utf8proc'
 brew 'zplug'
+brew 'zsh', args: ['without-etcdir']
 brew 'homebrew/python/numpy'
 cask '1password'
 cask 'adobe-illustrator-cc'
@@ -110,13 +116,13 @@ cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'webstorm'
 mas 'Numbers', id: 409203825
-mas 'Keynote', id: 409183694
-mas 'Xcode', id: 497799835
-mas 'LINE', id: 539883307
-mas 'Pages', id: 409201541
-mas 'Xcode', id: 497799835
-mas 'LINE', id: 539883307
-mas 'Keynote', id: 409183694
-mas 'Pages', id: 409201541
-mas 'Bear', id: 1091189122
 mas 'Numbers', id: 409203825
+mas 'Xcode', id: 497799835
+mas 'Keynote', id: 409183694
+mas 'Xcode', id: 497799835
+mas 'Bear', id: 1091189122
+mas 'Keynote', id: 409183694
+mas 'Pages', id: 409201541
+mas 'LINE', id: 539883307
+mas 'Pages', id: 409201541
+mas 'LINE', id: 539883307
