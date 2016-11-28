@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 trap 'echo Error: $0:$LINENO stopped; exit 1' ERR INT
 set -eu
@@ -18,7 +18,7 @@ set_screenshot_preferences()
 # Save screenshots to the desktop.
 defaults write com.apple.screencapture location "$HOME/Desktop"
 
-# Save screenshots as jpg 
+# Save screenshots as jpg
 defaults write com.apple.screencapture type -string "jpg"
 }
 
@@ -28,7 +28,7 @@ set_dashboard_preferences()
     # Disable Dashboard
     defaults write com.apple.dashboard mcx-disabled -bool true
 }
-set_dock_preferences() 
+set_dock_preferences()
 {
 
 # Automatically hide or show the Dock
@@ -48,7 +48,7 @@ defaults write com.apple.dock mru-spaces -bool false
 }
 
 
-set_finder_preferences() 
+set_finder_preferences()
 {
 # Add 'Quit' to Fider menu
 defaults write com.apple.finder QuitMenuItem -bool true
@@ -75,7 +75,7 @@ defaults write com.apple.finder QuitMenuItem -bool true
 
 }
 
-set_keyboard_preferences() 
+set_keyboard_preferences()
 {
 # Enable full keyboard access for all controls
     # (e.g. enable Tab in modal dialogs)
@@ -87,7 +87,7 @@ set_keyboard_preferences()
 
 }
 
-set_language_and_region_preferences() 
+set_language_and_region_preferences()
 {
     # Enable full keyboard access for all controls
     # (e.g. enable Tab in modal dialogs)
@@ -134,7 +134,7 @@ set_ui_and_ux_preferences()
 
 }
 
-# main 
+# main
 {{{1}}}
 
 # Ask for the administrator password upfront
