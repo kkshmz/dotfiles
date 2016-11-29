@@ -1,8 +1,7 @@
-#Using zplug through homebrew
-
-#Essential lines to make it work
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
+source $ZPLUG_HOME/repos/joel-porquet/zsh-dircolors-solarized/zsh-dircolors-solarized.plugin.zsh
 
 # Make sure to use double quotes
 zplug "zsh-users/zsh-history-substring-search"
@@ -13,6 +12,8 @@ zplug "tcnksm/docker-alias", use:zshrc
 
 # Load theme file
 zplug "agnoster/agnoster-zsh-theme", as:theme
+
+zplug "joel-porquet/zsh-dircolors-solarized"
 
 # Grab binaries from GitHub Releases
 # and rename with the "rename-to:" tag
@@ -25,9 +26,6 @@ zplug "junegunn/fzf-bin", \
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/git",   from:oh-my-zsh
 
-
-# Load if "if" tag returns true
-zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 
 # Supports checking out a specific branch/tag/commit
 zplug "b4b4r07/enhancd", at:v1
@@ -46,8 +44,10 @@ zplug "stedolan/jq", \
     from:gh-r, \
     as:command, \
     rename-to:jq
+
 zplug "b4b4r07/emoji-cli", \
     on:"stedolan/jq"
+
 # Note: To specify the order in which packages should be loaded, use the nice
 #       tag described in the next section
 
@@ -67,4 +67,3 @@ fi
 
 # Then, source plugins and add commands to $PATH
 zplug load --verbose
-
