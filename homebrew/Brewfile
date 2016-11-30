@@ -120,6 +120,8 @@ cask 'spotify'
 cask 'supercollider'
 cask 'thunderbird'
 cask 'unity'
+cask 'origami-studio'
+
 mas 'Numbers', id: 409203825
 mas 'Numbers', id: 409203825
 mas 'Xcode', id: 497799835
