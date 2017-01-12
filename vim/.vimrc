@@ -1,4 +1,4 @@
-#source through vim, using :source ~/.vimrc 
+
 " setting
 "文字コードをUFT-8に設定
 set fenc=utf-8
@@ -24,8 +24,10 @@ set virtualedit=onemore
 " インデントはスマートインデント
 set smartindent
 
-
+""Solarized"""
 
 syntax enable
 set background=dark
 colorscheme solarized
+
+set rtp+=/usr/local/opt/fzf
