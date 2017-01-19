@@ -10,8 +10,11 @@ tap 'jhawthorn/fzy'
 cask 'java'
 brew 'autoconf'
 brew 'autoenv'
+brew 'automake'
 brew 'berkeley-db'
+brew 'berkeley-db4'
 brew 'bfg'
+brew 'boost', args: ['c++11']
 brew 'brew-pip'
 brew 'ghc'
 brew 'cabal-install'
@@ -69,6 +72,8 @@ brew 'libvorbis'
 brew 'libsndfile'
 brew 'jack'
 brew 'jpeg-turbo'
+brew 'oniguruma'
+brew 'jq'
 brew 'libcroco'
 brew 'openssl'
 brew 'libevent'
@@ -90,6 +95,7 @@ brew 'nkf'
 brew 'node'
 brew 'p7zip'
 brew 'pandoc'
+brew 'peco'
 brew 'perl'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
@@ -123,13 +129,14 @@ cask 'android-file-transfer'
 cask 'android-studio'
 cask 'arduino'
 cask 'atom'
+cask 'cyberduck'
+cask 'cycling74-max'
 cask 'docker'
 cask 'dropbox'
 cask 'flux'
 cask 'franz'
 cask 'google-chrome'
 cask 'google-drive'
-cask 'haskell-platform'
 cask 'iterm2'
 cask 'makerbot-desktop'
 cask 'openframeworks'
@@ -146,9 +153,8 @@ cask 'spotify'
 cask 'supercollider'
 cask 'thunderbird'
 cask 'unity'
-cask 'virtualbox'
 cask 'vlc'
-mas 'GIF Brewery 3', id: 1081413713
+mas '123D Design', id: 566042322
 mas 'Xcode', id: 497799835
 mas 'LINE', id: 539883307
 mas 'Keynote', id: 409183694
@@ -160,4 +166,4 @@ mas 'LINE', id: 539883307
 mas 'Pages', id: 409201541
 mas 'Numbers', id: 409203825
 mas 'Keynote', id: 409183694
-mas '123D Design', id: 566042322
+mas 'GIF Brewery 3', id: 1081413713
