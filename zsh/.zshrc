@@ -1,3 +1,10 @@
+export PATH=/usr/local/miniconda3/bin:"$PATH"
+export OPENNI2_INCLUDE=/usr/local/include/ni2
+export OPENNI2_REDIST=/usr/local/lib/ni2
+export NITE2_INCLUDE=/usr/local/Cellar/NiTE/Include
+export NITE2_REDIST64=/usr/local/Cellar/NiTE/Redist
+export DYLD_FALLBACK_LIBRARY_PATH="$OPENNI2_REDIST:$NITE2_REDIST64:$DYLD_FALLBACK_LIBRARY_PATH"
+
 PATH=$PATH:/usr/local/bin
 PATH="$PATH:$(brew --prefix)/bin"
 
@@ -21,9 +28,9 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "b4b4r07/enhancd"
 
 # Load theme file
-zplug "agnoster/agnoster-zsh-theme", as:theme
+zplug "benniemosher/the-one-theme", as:theme
+zplug "geometry-zsh/geometry"
 
-zplug "joel-porquet/zsh-dircolors-solarized"
 
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/git",   from:oh-my-zsh
