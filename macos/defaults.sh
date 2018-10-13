@@ -46,6 +46,9 @@ defaults write com.apple.systemuiserver menuExtras -array \
 defaults write NSGlobalDomain AppleShowScrollBars -string "Automatic"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
 
+#NO MORE DS STORE
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
 # Disable smooth scrolling
 # (Uncomment if you’re on an older Mac that messes up the animation)
 defaults write NSGlobalDomain NSScrollAnimationEnabled -bool false
