@@ -300,8 +300,12 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
+
+# Set the orientation of the dock
+defaults write com.apple.dock orientation left
+
 # Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 16
+defaults write com.apple.dock tilesize -int 36
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
