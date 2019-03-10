@@ -8,10 +8,8 @@ PATH="$PATH:$(brew --prefix)/bin"
 
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
-## for pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi
+
+eval "$(pyenv init -)"
 
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
