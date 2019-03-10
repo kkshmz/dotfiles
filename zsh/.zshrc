@@ -1,20 +1,7 @@
-#for java8 reactnative develop
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home
-export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
-export PATH=/usr/local/opt/openssl/bin:$PATH
-
 #for ssh and mosh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
-
-
-export PATH=/usr/local/miniconda3/bin:"$PATH"
-export OPENNI2_INCLUDE=/usr/local/include/ni2
-export OPENNI2_REDIST=/usr/local/lib/ni2
-export NITE2_INCLUDE=/usr/local/Cellar/NiTE/Include
-export NITE2_REDIST64=/usr/local/Cellar/NiTE/Redist
-export DYLD_FALLBACK_LIBRARY_PATH="$OPENNI2_REDIST:$NITE2_REDIST64:$DYLD_FALLBACK_LIBRARY_PATH"
 
 PATH=$PATH:/usr/local/bin
 PATH="$PATH:$(brew --prefix)/bin"
@@ -26,13 +13,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi
 
-export OPENNI2_INCLUDE=/usr/local/include/ni2
-export OPENNI2_REDIST=/usr/local/lib/ni2
-
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 
-aliaas vi=vim
+alias vi=vim
 
 # Make sure to use double quotes
 zplug "zsh-users/zsh-history-substring-search"
