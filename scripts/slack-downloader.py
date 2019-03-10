@@ -23,7 +23,7 @@ from pprint import pprint # for debugging purposes
 # --- --- --- --- ---
 
 # API Token: see https://api.slack.com/custom-integrations/legacy-tokens
-TOKEN = "xoxp-415654110822-414203132483-453593365588-064460f9e177abe5b0a588bf2413e6ed"
+TOKEN = ""
 
 # output main directory, without slashes
 OUTPUTDIR = "data"
