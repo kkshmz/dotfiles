@@ -12,6 +12,7 @@
 		  "import { defineComponent } from 'vue'",
 		  "",
 		  "export default defineComponent({",
+		  "\tname: ${TM_DIRECTORY},",
 		  "\tcomponents:{",
 		  "\t",
 		  "\t},",
