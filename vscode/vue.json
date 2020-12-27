@@ -1,0 +1,31 @@
+{
+	"Vue Single File Component Composition API with Typescript": {
+		"prefix": "vbase-3-ts",
+		"body": [
+		  "<template>",
+		  "\t<div>",
+		  "",
+		  "\t</div>",
+		  "</template>",
+		  "",
+		  "<script lang=\"ts\">",
+		  "import { defineComponent } from 'vue'",
+		  "",
+		  "export default defineComponent({",
+		  "\tcomponents:{",
+		  "\t",
+		  "\t},",
+		  "\tsetup () {",
+		  "\t\t${0}\n",
+		  "\t\treturn {}",
+		  "\t}",
+		  "})",
+		  "</script>",
+		  "",
+		  "<style lang=\"postcss\" scoped>",
+		  "",
+		  "</style>"
+		],
+		"description": "Base for Vue File Composition API - Typescript"
+	  },
+}
