@@ -76,10 +76,12 @@
   l = log
   m = merge
   o = checkout
-  p = pull
+  pu = pull
   r = remote
   s = status
   w = whatchanged
+  p = push
+
 
   ##
   # Short aliases for our frequent commands.
@@ -342,7 +344,7 @@
   #     5dae0a0 - whatever
   #
   rbi = rebase --interactive @{upstream}
-
+  
   # See https://blog.filippo.io/git-fixup-amending-an-older-commit/
   # This is a slightly modified version
   fixup = "!f() { TARGET=$(git rev-parse \"$1\"); git commit --fixup=$TARGET && GIT_EDITOR=true git rebase --interactive --autosquash $TARGET~; }; f"
