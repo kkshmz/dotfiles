@@ -8,10 +8,7 @@ PATH="$PATH:$(brew --prefix)/bin"
 
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
-## for pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi
+
 
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
@@ -57,15 +54,5 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
-export PATH="/usr/local/bin:$PATH"
+zplug load 
 
-
-#for emscripten
-local EMSCRIPTEN_PATH="$HOME/Workspace/emsdk_portable/emscripten/1.35.0"
-export PATH="$EMSCRIPTEN_PATH:$PATH"
-export PATH=/usr/local/Cellar/ruby/2.4.1_1/bin:$PATH
-
-#for android development
-export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
-export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
