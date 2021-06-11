@@ -613,7 +613,7 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 ###############################################################################
 
 # Set up my preferred keyboard shortcuts
-# cp -r init/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
+cp -r ../init/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
 
 
 ###############################################################################
@@ -629,3 +629,6 @@ for app in "Activity Monitor" \
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+# install rust
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
